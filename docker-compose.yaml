@@ -6,4 +6,8 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_SOMEENV=HIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+      - BACKEND_URL=https://pillar-staging-api.smms.com.tw/
+      - API_PATH=api
+      - API_VERSION=v1
+    env_file:
+      - env/staging.env
